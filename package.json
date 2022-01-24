@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",

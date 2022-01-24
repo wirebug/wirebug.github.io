@@ -1,4 +1,4 @@
-name: Check repositories code
+name: Check code
 
 on: [pull_request]
 
