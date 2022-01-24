@@ -1,10 +1,6 @@
 name: Check repositories code
 
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [opened]
+on: [pull_request]
 
 jobs:
   build:
@@ -36,4 +32,10 @@ jobs:
 
       - name: Lint
         run: |
+          npm i
           npm run lint
+
+      - name: Build
+        run: |
+          npm run build
+          npm run export
