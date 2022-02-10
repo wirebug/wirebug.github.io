@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
-import Image from '../components/Image'
+import Image from '../components/atoms/Image'
+import Navigation from '../components/organisms/Navigation'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
           }
         ]}
       />
+      <Navigation navigation={[{link: '/', label: 'Home'}]} />  
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -67,7 +69,7 @@ const Home: NextPage = () => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="vercel.svg" alt="Vercel Logo" />
+            {/* <Image src="vercel.svg" alt="Vercel Logo" /> */}
           </span>
         </a>
       </footer>
